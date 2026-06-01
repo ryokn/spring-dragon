@@ -31,7 +31,8 @@ PALETTE = {
     "brightblue":"#7FB4CA",  # ターミナル明るい青
     # アクセント・UI
     "accent":    "#658594",  # バッジ、ハイライト前景
-    "selection": "#223249",  # 選択背景
+    "selection": "#223249",  # UI背景（補完ポップアップ等）
+    "sakura":    "#70495d",  # テキスト選択背景（Spring Night yaezakura）
     "find":      "#2D4F67",  # 検索マッチ背景
     # Git / 診断
     "added":     "#76946A",
@@ -53,8 +54,8 @@ EDITOR_COLORS = {
     "editorWhitespace.foreground":            PALETTE["bg1"],
 
     # 選択・ハイライト
-    "editor.selectionBackground":             PALETTE["selection"],
-    "editor.selectionHighlightBackground":    PALETTE["bg4"] + "80",
+    "editor.selectionBackground":             PALETTE["sakura"],
+    "editor.selectionHighlightBackground":    PALETTE["sakura"] + "55",
     "editor.selectionHighlightBorder":        PALETTE["bg5"],
     "editor.wordHighlightBackground":         PALETTE["bg4"] + "4D",
     "editor.wordHighlightBorder":             PALETTE["bg5"],
@@ -159,7 +160,7 @@ EDITOR_COLORS = {
     "terminal.background":                    PALETTE["bg1"],
     "terminal.foreground":                    PALETTE["fg"],
     "terminal.border":                        PALETTE["bg0"],
-    "terminal.selectionBackground":           PALETTE["selection"],
+    "terminal.selectionBackground":           PALETTE["sakura"],
     "terminal.ansiBlack":                     PALETTE["bg0"],
     "terminal.ansiRed":                       PALETTE["red"],
     "terminal.ansiGreen":                     PALETTE["green"],
